@@ -1,0 +1,13 @@
+
+
+server:
+  port: 8081
+
+imb-framework:
+  queue-name: invoices-request-queue 
+  jms-broker:
+    url: tcp://localhost:61616
+    user: admin
+    password: admin
+    max-connections: 10
+    concurrent-consumers: 10
